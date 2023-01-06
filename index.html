@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <script type="module" src="terrain.js"></script>
+    <title>NFT Gallery</title>
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    <div id = "container"> 
+        <div id="infoBox">
+            <div id="head">
+                <div id="thumb"></div>
+                <h2 id="name"></h2>
+                <img id="close" src="window-close.png">
+            </div>
+            <p id="desc"></p>
+            <div id="volume" class="statBox">
+                <h3>24HR VOLUME</h3>
+                <html lang="en">
+                <p></p>
+            </div>
+            <div id="floor" class="statBox">
+                <h3>SALES FLOOR</h3>
+                <p></p>
+            </div>
+            <div id="sales" class="statBox">
+                <h3>24HR SALES</h3>
+                <p></p>
+            </div>
+            <div id="average" class="statBox">
+                <h3>24HR AVERAGE</h3>
+                <p></p>
+            </div>
+        </div>  
+        <div id="gallery" class="main-carousel"></div>
+    </div>
+    <script>
+        // const elem = document.querySelector('.main-carousel')
+        // const flkty = new Flickity( elem, {
+        //     contain: true,
+        //     wrapAround: true,
+        //     draggable: false,
+        //     lazyLoad: true
+        // });
+    </script>
+    <script src = "frontend.js"></script>
+</body>
+</html>

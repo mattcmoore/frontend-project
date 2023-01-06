@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+canvas{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+#container{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+}
+#gallery{
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+}
+.carousel-cell {
+    width: 20%; 
+    min-height: 98%;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 25% 25%;
+    background-clip: padding-box;
+    border: 2px solid cyan;
+    background-color: white;
+}
+.carousel-cell img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    /* margin-right: 10px; */
+}
+.carousel-cell p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.carousel-cell p:last-child{
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding: 5px;
+}
+#infoBox{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 50%;
+    min-height: 50%;
+    border-radius: 10px 10px;
+    background-clip: padding-box;
+    border-width: 1.5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, cyan, violet)1;
+    /* border: 1px solid lightskyblue; */
+    /* border-image-source: url('gradient.svg'); */
+    background-color: white;
+    /* padding: 2%; */
+}
+#head{
+    top: 0;
+    position: relative;
+    color: lightskyblue;
+    overflow: auto;
+    /* display: flex;
+    justify-content: flex-end */
+}
+/* #head::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url('polybg.jpg');
+    background-repeat: no-repeat;
+    background-clip:inherit;
+    opacity: .3;
+} */
+#head img{
+    margin: 2%;
+}
+#thumb{
+    float: left;
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    left: 3%;
+    margin-top: 3%;
+}
+#name{
+    display: block;
+    float: left;
+    font-family: 'Orbitron', sans-serif; 
+    position: relative;
+    left: 6%;
+    margin-top: 5%;
+}
+#close{
+    position: relative;
+    float: right;
+    width: 5%;
+}
+#desc{
+    float: left;
+    position: relative;
+    margin: 2%
+}
+#msg{
+    float: left;
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;  
+    width: 100%;
+}
+.statBox{
+    float: left;
+    margin: 1% 5%;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;       
+}
+.statBox h3{
+    color: blue;
+}
